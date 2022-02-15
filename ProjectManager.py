@@ -8,12 +8,6 @@ import zipfile
 import tkinter as tk
 from tkinter import simpledialog
 
-
-WARNING = '\033[31m'
-ENDC = '\033[0m'
-
-os.system('color')
-
 def mainLoop():
     ROOT = tk.Tk()
 
@@ -61,10 +55,6 @@ def createNewProject():
     now = datetime.datetime.now()
     year = '{:02d}'.format(now.year)
     month = '{:02d}'.format(now.month)
-    #day = '{:02d}'.format(now.day)
-    #hour = '{:02d}'.format(now.hour)
-    #minute = '{:02d}'.format(now.minute)
-    #day_month_year = '{}-{}-{}'.format(year, month, day)
     month_name = now.strftime("%B")
 
     createPath(root, year)
@@ -84,7 +74,6 @@ def createNewProject():
 
     for path in createPaths:
         createPath(projectPath,path)
-
 
     with open('config.json', "w") as configFile:
         configFile.write(json.dumps(config, indent=4))
@@ -122,7 +111,6 @@ def rPaths(d):
             if(path not in ignorePaths):
                 rPaths(newPath)
             else:
-                #print("IGNORED "+newPath)
                 break
 
     dirName = os.path.basename(d)

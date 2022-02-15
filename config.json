@@ -1,0 +1,42 @@
+{
+    "lastProjectNumber": 0,
+    "root": "D:\\",
+    "projectPathFormat": "^([0-9]{3})_([a-zA-Z_0-9]+)$",
+    "monthPathFormat": "^([0-9]{2})_([a-zA-Z]+)$",
+    "newProjectConfig": {
+        "createPaths": [
+            "Deliverables",
+            "Documentation",
+            "Downloads",
+            "Estimates",
+            "FromClient",
+            "Generated"
+        ]
+    },
+    "cleanProjectConfig": {
+        "removePaths": [
+            "Intermediate",
+            "DerivedDataCache",
+            "Saved/Autosaves",
+            "Saved/Backup",
+            "Saved/Cooked",
+            "Saved/Crashes",
+            "Saved/Logs",
+            "Saved/ShaderDebugInfo",
+            "Saved/StagedBuilds",
+            "Saved/Temp",
+            "Library",
+            "Logs"
+        ],
+        "ignorePaths": [
+            ".git",
+            ".vs",
+            ".gradle",
+            ".csproj",
+            "Builds"
+        ],
+        "ignoreProjects": [
+            "001_IgnoreMe"
+        ]
+    }
+}
